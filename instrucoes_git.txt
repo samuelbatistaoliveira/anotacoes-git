@@ -29,8 +29,8 @@ Configuração global (vale para todos os repositórios):
 git config --global user.name "Samuel Batista"
 git config --global user.email "samuelbbatista32@gmail.com"
 
-git add 
-Adiciona arquivos à staging area (área de preparação), marcando quais alterações serão incluídas no próximo commit.ele
+git add
+Adiciona arquivos à staging area (área de preparação), marcando quais alterações serão incluídas no próximo commit.
 
 git commit -m "commit um"
-
+Cria um commit com as alterações que foram adicionadas à staging area através do comando git add.
