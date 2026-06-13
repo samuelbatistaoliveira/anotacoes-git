@@ -32,5 +32,12 @@ git config --global user.email "samuelbbatista32@gmail.com"
 git add
 Adiciona arquivos à staging area (área de preparação), marcando quais alterações serão incluídas no próximo commit.
 
+git add .
+Adiciona todas as alterações da pasta atual e de suas subpastas à staging area.
+
 git commit -m "commit um"
 Cria um commit com as alterações que foram adicionadas à staging area através do comando git add.
+
+git log
+Exibe o histórico de commits do repositório, mostrando informações como autor, data, hash e mensagem de cada commit.
+
