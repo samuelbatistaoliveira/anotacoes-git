@@ -1,0 +1,34 @@
+Curso Git e GIthub
+
+Comandos
+
+git init
+inicializa um repositório Git em uma pasta que ainda não tinha controle de versão.
+
+git status
+Mostra o estado atual do repositório, indicando arquivos modificados, adicionados ou não rastreados.
+
+.gitignore
+Para ignorar uma pasta, coloque o nome dela no arquivo .gitignore:
+
+nome_do_diretorio/
+
+
+Para ignorar todos os arquivos Python:
+Ignora todos os arquivos com extensão .py
+
+git config user.name 'Samuel Batista' 
+Define o nome do autor dos commits.
+
+git config user.email 'samuelbbatista32@gmail.com'
+Define o e-mail do autor dos commits.
+
+
+Configuração global (vale para todos os repositórios):
+
+git config --global user.name "Samuel Batista"
+git config --global user.email "samuelbbatista32@gmail.com"
+
+git add 
+Adiciona arquivos à staging area (área de preparação), marcando quais alterações serão incluídas no próximo commit.ele
+
