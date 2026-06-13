@@ -33,3 +33,4 @@ git add
 Adiciona arquivos à staging area (área de preparação), marcando quais alterações serão incluídas no próximo commit.ele
 
 git commit -m "commit um"
+
