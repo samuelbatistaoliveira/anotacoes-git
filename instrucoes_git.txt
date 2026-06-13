@@ -41,3 +41,9 @@ Cria um commit com as alterações que foram adicionadas à staging area atravé
 git log
 Exibe o histórico de commits do repositório, mostrando informações como autor, data, hash e mensagem de cada commit.
 
+git config core.pager cat
+Desabilita o pager e mostra tudo diretamente no terminal.
+
+git config core.pager less
+Habilita o pager "less", permitindo navegar pela saída de comandos longos.
+
