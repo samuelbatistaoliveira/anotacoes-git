@@ -78,3 +78,13 @@ git log --oneline --author="Samuel Batista"
 Exibe de forma resumida apenas os commits realizados pelo autor informado.
 
 git help log
+
+git checkout <hash_do_commit>
+Permite navegar para um commit específico do histórico do repositório.
+Ao fazer isso, o Git entra no estado "detached HEAD", permitindo visualizar ou testar versões antigas do projeto.
+
+git checkout master
+para voltar para a branch principal
+
+git switch master
+retorna ao commit mais recente da branch master
