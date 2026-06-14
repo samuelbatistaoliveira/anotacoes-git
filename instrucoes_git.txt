@@ -47,3 +47,34 @@ Desabilita o pager e mostra tudo diretamente no terminal.
 git config core.pager less
 Habilita o pager "less", permitindo navegar pela saída de comandos longos.
 
+git log -1
+Exibe apenas o commit mais recente do repositório.
+
+git log --oneline
+Exibe o histórico de commits de forma resumida
+
+git log --oneline -2
+Exibe os 2 commits mais recentes de forma resumida
+
+git log --before="2020-06-14"
+Exibe os commits realizados antes da data informada.
+
+git log --after="2020-06-13"
+Exibe os commits realizados após a data informada.
+
+git log --after="1 week ago"
+Exibe os commits realizados na última semana.
+
+git log --since="2 days ago"
+Exibe os commits realizados nos últimos 2 dias.
+
+git log --before="1 month ago" 
+Exibe os commits realizados antes de um mês atrás.
+
+git log --author="Samuel Batista"
+Exibe apenas os commits realizados pelo autor informado.
+
+git log --oneline --author="Samuel Batista"
+Exibe de forma resumida apenas os commits realizados pelo autor informado.
+
+git help log
