@@ -101,7 +101,5 @@ A remoção ficará registrada no próximo commit.
 
 git diff --staged
 Exibe as diferenças entre o último commit (HEAD) e as alterações que estão na staging area (área de preparação).
-
 É utilizado para revisar o que será incluído no próximo commit.
-
 
