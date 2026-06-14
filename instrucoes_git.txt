@@ -90,3 +90,5 @@ git switch master
 retorna ao commit mais recente da branch master
 
 git mv instrucoes_git.txt instrucoes1_git.txt
+
+git rm instrucoes1_git.txt
