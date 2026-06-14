@@ -38,6 +38,9 @@ Adiciona todas as alterações da pasta atual e de suas subpastas à staging are
 git commit -m "commit um"
 Cria um commit com as alterações que foram adicionadas à staging area através do comando git add.
 
+git commit --amend -m "Adicionando uma nova linha"
+Altera a mensagem do último commit realizado.
+
 git log
 Exibe o histórico de commits do repositório, mostrando informações como autor, data, hash e mensagem de cada commit.
 
@@ -90,5 +93,15 @@ git switch master
 retorna ao commit mais recente da branch master
 
 git mv instrucoes_git.txt instrucoes1_git.txt
+Move ou renomeia arquivos que estão sendo controlados pelo Git.
 
 git rm instrucoes1_git.txt
+Remove um arquivo do diretório de trabalho e também do controle de versão do Git.
+A remoção ficará registrada no próximo commit.
+
+git diff --staged
+Exibe as diferenças entre o último commit (HEAD) e as alterações que estão na staging area (área de preparação).
+
+É utilizado para revisar o que será incluído no próximo commit.
+
+
