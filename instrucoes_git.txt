@@ -103,3 +103,21 @@ git diff --staged
 Exibe as diferenças entre o último commit (HEAD) e as alterações que estão na staging area (área de preparação).
 É utilizado para revisar o que será incluído no próximo commit.
 
+git restore --staged instrucoes_git.txt
+Remove o arquivo da staging area (desfaz o git add), mas mantém as alterações no arquivo.
+
+git checkout instrucoes_git.txt
+Descarta as alterações feitas no arquivo e restaura a versão do último commit.
+
+git reset HEAD --hard
+Remove todas as alterações não commitadas e retorna o repositório exatamente ao estado do último commit.
+
+"Um branch nada mais é do que uma ramificação do projeto."
+
+branch master -> ramo principal
+
+git branch
+
+git merge nome da branch a junção de dois branch
+
+git status
