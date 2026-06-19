@@ -117,7 +117,14 @@ Remove todas as alterações não commitadas e retorna o repositório exatamente
 branch master -> ramo principal
 
 git branch
+Lista todas as branches do repositório.
+A branch atual aparece marcada com *.
+
+git checkout nomedabranch
+Troca para a branch informada.
 
 git merge nome da branch a junção de dois branch
+Mescla (junta) as alterações da branch informada na branch atual.
 
-git status
+git rebase nomebranch
+Reaplica os commits da branch atual sobre a branch informada, reorganizando o histórico.
