@@ -128,3 +128,37 @@ Mescla (junta) as alterações da branch informada na branch atual.
 
 git rebase nomebranch
 Reaplica os commits da branch atual sobre a branch informada, reorganizando o histórico.
+
+git fetch
+Baixa as atualizações do repositório remoto para o repositório local, mas não altera a branch atual nem os arquivos do projeto.
+
+git pull
+Baixa as atualizações do repositório remoto e as integra automaticamente na branch atual.
+
+git push
+Envia os commits do repositório local para o repositório remoto (GitHub, GitLab, etc.).
+
+git init --bare
+Cria um repositório Git sem diretório de trabalho (working directory).
+É utilizado principalmente para criar repositórios remotos compartilhados em servidores.
+
+git remote -v
+Lista os repositórios remotos configurados no projeto, mostrando as URLs usadas para fetch e push.
+
+git checkout -- .
+Descarta todas as alterações não commitadas dos arquivos rastreados no diretório atual, restaurando-os para o estado do último commit.
+
+git checkout -- nomedoArquivo
+Descarta as alterações feitas em um arquivo específico e restaura a versão do último commit.
+
+git push -u origin master
+Envia os commits da branch master para o repositório remoto origin e define a branch remota como padrão para futuros push e pull.
+
+git revert <commit id>
+Cria um novo commit que desfaz as alterações de um commit anterior, sem remover o histórico.
+
+git reset HEAD~1
+Move o ponteiro HEAD um commit para trás, desfazendo o último commit local e mantendo as alterações nos arquivos.
+
+git reset --hard HEAD
+Remove todas as alterações não commitadas e retorna o repositório exatamente ao estado do último commit.
