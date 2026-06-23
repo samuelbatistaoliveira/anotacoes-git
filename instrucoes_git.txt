@@ -163,3 +163,6 @@ Move o ponteiro HEAD um commit para trás, desfazendo o último commit local e m
 git reset --hard HEAD
 Remove todas as alterações não commitadas e retorna o repositório exatamente ao estado do último commit.
 
+git config --unset credential.helper
+
+git config --unset credential.helper store
