@@ -38,4 +38,4 @@ Este repositório é atualizado conforme avanço nos estudos e aprendo novos con
 
 ---
 
-⭐ Caso este material seja útil para outros estudantes, fique à vontade para explorar o conteúdo.
+Caso este material seja útil para outros estudantes, fique à vontade para explorar o conteúdo.
