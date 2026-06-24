@@ -1,4 +1,4 @@
-# 📚 Anotações Git e GitHub
+# 📚 Git e GitHub Fundamentals
 
 Repositório criado para registrar meus estudos de **Git** e **GitHub**, contendo anotações dos principais comandos, conceitos e práticas de controle de versão.
 
@@ -17,7 +17,7 @@ Repositório criado para registrar meus estudos de **Git** e **GitHub**, contend
 
 ## 🎯 Objetivo
 
-Consolidar os conhecimentos adquiridos durante meus estudos de Git e GitHub por meio de exemplos práticos e anotações para consulta futura.
+Consolidar conhecimentos em Git e GitHub por meio de exemplos práticos e anotações, desenvolvendo habilidades essenciais de controle de versão, colaboração em equipe e gerenciamento de código-fonte.
 
 ## 🛠️ Tecnologias
 
