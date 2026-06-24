@@ -81,16 +81,14 @@ git log --oneline --author="Samuel Batista"
 Exibe de forma resumida apenas os commits realizados pelo autor informado.
 
 git help log
+Exibe a documentação completa do comando git log.
 
 git checkout <hash_do_commit>
 Permite navegar para um commit específico do histórico do repositório.
 Ao fazer isso, o Git entra no estado "detached HEAD", permitindo visualizar ou testar versões antigas do projeto.
 
-git checkout master
-para voltar para a branch principal
-
-git switch master
-retorna ao commit mais recente da branch master
+git switch nomedabranch
+Troca para a branch informada.
 
 git mv instrucoes_git.txt instrucoes1_git.txt
 Move ou renomeia arquivos que estão sendo controlados pelo Git.
@@ -106,27 +104,33 @@ Exibe as diferenças entre o último commit (HEAD) e as alterações que estão 
 git restore --staged instrucoes_git.txt
 Remove o arquivo da staging area (desfaz o git add), mas mantém as alterações no arquivo.
 
-git checkout instrucoes_git.txt
+git restore instrucoes_git.txt
 Descarta as alterações feitas no arquivo e restaura a versão do último commit.
-
-git reset HEAD --hard
-Remove todas as alterações não commitadas e retorna o repositório exatamente ao estado do último commit.
 
 "Um branch nada mais é do que uma ramificação do projeto."
 
-branch master -> ramo principal
+branch principal -> geralmente master ou main
+
+git branch nomedabranch
+Cria uma nova branch.
 
 git branch
 Lista todas as branches do repositório.
 A branch atual aparece marcada com *.
 
-git checkout nomedabranch
+git branch -d nomedabranch
+Remove uma branch local já mesclada.
+
+git branch -D nomedabranch
+Força a remoção de uma branch local.
+
+git switch nomedabranch
 Troca para a branch informada.
 
-git merge nome da branch a junção de dois branch
+git merge nomedabranch
 Mescla (junta) as alterações da branch informada na branch atual.
 
-git rebase nomebranch
+git rebase nomedabranch
 Reaplica os commits da branch atual sobre a branch informada, reorganizando o histórico.
 
 git fetch
@@ -134,6 +138,12 @@ Baixa as atualizações do repositório remoto para o repositório local, mas n�
 
 git pull
 Baixa as atualizações do repositório remoto e as integra automaticamente na branch atual.
+
+git clone <url>
+Clona (copia) um repositório remoto para sua máquina.
+
+git remote add origin <url>
+Conecta o repositório local a um repositório remoto.
 
 git push
 Envia os commits do repositório local para o repositório remoto (GitHub, GitLab, etc.).
@@ -145,14 +155,14 @@ Cria um repositório Git sem diretório de trabalho (working directory).
 git remote -v
 Lista os repositórios remotos configurados no projeto, mostrando as URLs usadas para fetch e push.
 
-git checkout -- .
-Descarta todas as alterações não commitadas dos arquivos rastreados no diretório atual, restaurando-os para o estado do último commit.
+git restore .
+Descarta todas as alterações não commitadas dos arquivos rastreados.
 
-git checkout -- nomedoArquivo
-Descarta as alterações feitas em um arquivo específico e restaura a versão do último commit.
+git restore nomedoArquivo
+Descarta as alterações feitas em um arquivo específico.
 
-git push -u origin master
-Envia os commits da branch master para o repositório remoto origin e define a branch remota como padrão para futuros push e pull.
+git push -u origin <branch>
+Envia os commits da branch informada para o repositório remoto origin e define a branch remota como padrão para futuros push e pull.
 
 git revert <commit id>
 Cria um novo commit que desfaz as alterações de um commit anterior, sem remover o histórico.
@@ -164,5 +174,7 @@ git reset --hard HEAD
 Remove todas as alterações não commitadas e retorna o repositório exatamente ao estado do último commit.
 
 git config --unset credential.helper
+Remove a configuração local do helper de credenciais.
 
-git config --unset credential.helper store
+git config --global --unset credential.helper
+Remove a configuração global do helper de credenciais.
